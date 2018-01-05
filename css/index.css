@@ -1,0 +1,56 @@
+.quote-main{
+	padding: 15px;
+	display: inline-block;
+	width: 59%;
+	color: #fff;
+	vertical-align: top;
+}
+.quote-description{
+	text-align: left;
+}
+.quote-credit{
+	text-align: right;
+	text-transform: italic;
+}
+.image-main{
+	display: inline-block;
+	height: auto;
+	width: 40%;
+	vertical-align: bottom;
+}
+body{
+	background-image: url("https://images.unsplash.com/1/work-stations-plus-espresso.jpg?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat-y;
+}
+#home-main{
+	display: table;
+    height: 75%;
+    width: 100%;
+}
+#home-main-child{
+	display: table-cell;
+    vertical-align: middle;
+}
+#main-contents{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+	background: rgba(0,0,0,.7);
+}
+/*checking dissapering contents on less screen width*/
+@media only screen and (max-width: 645px) {
+    #main-image-home{
+      display: none;
+    }
+    #home-main{
+    	background-image: url("https://images.unsplash.com/1/work-stations-plus-espresso.jpg?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+		background-size: cover;
+		background-position: center;
+		background-repeat: repeat-y;
+    }
+    .quote-main{
+    	width: 100%;
+    }
+}

@@ -1,0 +1,162 @@
+/* resetting browser stuff */
+*     {
+  box-sizing: border-box;
+}
+html,
+body   {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* styling our overall page */
+body     {
+  background: #CCC;
+  font-family: Century Gothic, Helvetica, sans-serif;
+}
+
+/* styling our header */
+header   {
+  background: #111;
+  color: #FFF;
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* logo */
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 15%;
+}
+#logo img{
+  /*border-radius: 3px;*/
+  /*margin-right: 8px;*/
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+}
+#logo span{
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
+/* main navigation */
+nav {
+  width: 84%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+nav ul   {
+  list-style: none;
+  margin: 0;
+} 
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+nav ul li a:hover   {
+  background: #444;
+}
+
+
+
+/*  footer styling    */
+#home-footer{
+  bottom: 0; 
+  background: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+}
+#footer-list{
+  text-decoration: none;
+  color: #fff;
+  list-style: none;
+}
+#footer-list li{
+  display: inline-block;
+}
+.icon{
+  margin-right: 20px;
+  width: 30px;
+  height: auto;
+}
+.left-footer{
+  display: inline-block;
+  width: 49%;
+}
+.right-footer{
+  display: inline-block;
+  width: 50%;
+  padding-right: 20px;
+  text-align: right;
+}
+header{
+  height: 14%;
+}
+footer{
+  height: 10%;
+}
+@media screen and (max-width: 645px),screen and (max-height: 535px) {
+  .right-footer{
+    display: none;
+   }
+   .left-footer{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+   }
+   header{
+    padding: 2px;
+    height: auto;
+    position: none;
+   }
+   #logo{
+    width: 0;
+    display: none;
+   }
+   .top-nav{
+    width: 100%;
+   }
+   nav{
+    background: #111;
+    width: 100%;
+   }
+   #footer-list,nav ul{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 3px;
+   }
+   nav ul li{
+    padding: 0;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    transition: 0.3s ease all;
+  }
+  #home-footer{
+    height: auto;
+    position: relative;
+  } 
+}
+.active{
+  background: #DDD;
+  color: #000;
+}
+.active:hover{
+  background: #AAA;
+}
