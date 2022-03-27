@@ -1,0 +1,10 @@
+enum A {
+  SET_SCENE,
+  SET_POINT_LIGHT,
+  SET_AMBIENT_LIGHT,
+  SET_RENDERER,
+  SET_CAMERA,
+  SET_FRAME_ID,
+}
+
+export default A;
